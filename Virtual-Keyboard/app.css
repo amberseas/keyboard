@@ -1,0 +1,121 @@
+html {
+    font-size: 62.5%;
+    /*1rem = 10px*/
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+.header {
+    font-family: 'Grape Nuts', cursive;
+    text-align: center;
+    font-size: 5rem;
+    color: #976f82;
+    letter-spacing: 3px;
+    font-weight: 400;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.keyboard {
+    width: 92rem;
+    padding: 1rem;
+    margin: 0 auto;
+    background-color: #774c60;
+    box-shadow: 0 0 5rem rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.instructions {
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    width: 90rem;
+    font-size: 1.6rem;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 1rem;
+}
+
+.instructions>p {
+    margin: 0;
+}
+
+.text-area {
+    width: 91rem;
+    height: 15rem;
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #774c60;
+    outline: none;
+    border: none;
+    border-radius: 0.4rem;
+}
+
+.keyboard__keys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.keyboard__key {
+    font-size: 1.6rem;
+    height: 5rem;
+    width: 5rem;
+    margin: 3px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    padding: 1rem;
+    transition: all 0.1s;
+}
+
+.keyboard__key:hover {
+    font-weight: bold;
+}
+
+.active {
+    background-color: rgba(255, 255, 255, 0.17);
+    transform: translateY(1px);
+}
+
+.keyboard__key--med {
+    flex-grow: 1;
+    width: 7rem;
+}
+
+.keyboard__key--med-large {
+    width: 10.7rem;
+}
+
+.keyboard__key--wide {
+    flex-grow: 1;
+    width: 11rem;
+}
+
+.keyboard__key--extra-wide {
+    flex-grow: 1;
+    width: 35rem;
+}
+
+.keyboard__key--no-left-padd {
+    padding-left: 0;
+}
+
+.keyboard__key--activatable {
+    background-color: rgba(255, 255, 255, 0.856);
+    color: #774c60;
+}
+
+.material-symbols-outlined {
+    padding: 0.5rem;
+}
